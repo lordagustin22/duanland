@@ -33,7 +33,6 @@
 
 .sitio-titulo {
     font-size: 50px;
-    margin-bottom: -20px;
 }
 
 h1 {
@@ -111,13 +110,6 @@ p {
 
 img {
     max-width: 100%;
-}
-
-@media screen and (max-width 1200px) {
-    img {
-        max-width: 80%;
-        height: auto;
-    }
 }
 
 a {
@@ -201,7 +193,7 @@ li {
     width: 100%;
 }
 
-ul.botones li a {
+ul.botones a {
     color: inherit;
 }
 
