@@ -15,9 +15,12 @@
     background-color: var(--main-light-blue, rgb(74, 121, 170));
 }
 
-.duanland-imagen {
+.nipaaaah {
+    width: 300px;
+    height: 200px;
+    max-width: 100%;
     max-height: 50vh;
-    border: .3em outset #e5e4e2;
+    border: .3em outset;
     border-radius: 50%;
 }
 
@@ -100,8 +103,28 @@ p {
 img {
     display: block;
     max-width: 100%;
+    width: 90%;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
+}
+
+iframe {
+    width: 100%;
+    max-height: auto;
+}
+
+.QR {
+    display: initial;
+}
+
+figcaption {
+    margin-top: 10px;
+    font-style: italic;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    font-family: "Apple Garamond", Times, "Georgia", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif;
 }
 
 a {
@@ -164,10 +187,6 @@ ul {
 
 ul, ol {
     margin: 0.2em -25px;
-}
-
-li {
-    margin: 1em auto;
 }
 
 .botones {
@@ -294,7 +313,7 @@ pre code {
         padding: 0 15px;
     }
 
-    h1, h2, h3, h4 {
+    h1 {
         font-size: 1.2em;
     }
 
@@ -309,8 +328,7 @@ pre code {
     }
 
     .top-nav a {
-        padding: 3px 0;
-        margin: auto;
+        padding: .1em 0;
         font-size: 1.3em;
     }
 }
