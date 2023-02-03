@@ -15,9 +15,32 @@
     background-color: var(--main-light-blue, rgb(74, 121, 170));
 }
 
+main {
+    max-width: 47em;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+
+body {
+    background-color: rgb(34, 34, 34);
+    color: var(--main-white, rgb(217, 217, 217));
+    font-family: "Libre Franklin","Helvetica Neue",
+    helvetica, avenir, Ubuntu, arial, Verdana, sans-serif;
+    font-size: 100%;
+    line-height: 1.5;
+    hyphens: auto;
+    overflow-wrap: break-word;
+    margin: 0 auto;
+}
+/* this means that the font size is
+only 16 pixels, so the formula
+for converting to em is:
+em = px / font-size
+e.g: 10px / 16px = 0.625em */
+
 .nipaaaah {
-    width: 300px;
-    height: 200px;
+    width: 18.75em;
+    height: 12.5em;
     max-width: 100%;
     max-height: 50vh;
     border: .3em outset;
@@ -28,29 +51,29 @@
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    gap: 10px;
+    gap: 0.625em;
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 1.875em;
     /* font-family: "Apple Garamond", Times, "Georgia", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", serif; */
     font-weight: 900;
 }
 
 h2 {
-    font-size: 25px;
+    font-size: 1.5625em;
     font-weight: 600;
 }
 
 h3 {
-    font-size: 21px;
+    font-size: 1.3125em;
     font-weight: 400;
     margin-bottom: 0;
 }
 
 
 h4 {
-    font-size: 18px;
+    font-size: 1.125em;
     font-weight: 200;
 }
 
@@ -74,26 +97,8 @@ h4 {
     margin: 0;
     color: #acacac;
     text-align: center;
-    padding: 16px 0.5em;
+    padding: 1em 0.5em;
     font-size: 1.1em;
-}
-
-main {
-    max-width: 46em;
-    margin: 0 auto;
-    padding: 0 1.5rem;
-}
-
-body {
-    background-color: rgb(34, 34, 34);
-    color: var(--main-white, rgb(217, 217, 217));
-    font-family: "Libre Franklin","Helvetica Neue",
-    helvetica, avenir, Ubuntu, arial, Verdana, sans-serif;
-    font-size: 100%;
-    line-height: 1.5;
-    hyphens: auto;
-    overflow-wrap: break-word;
-    margin: 0 auto;
 }
 
 p {
@@ -120,7 +125,7 @@ iframe {
 }
 
 figcaption {
-    margin-top: 10px;
+    margin-top: 0.625em;
     font-style: italic;
     font-weight: 700;
     color: white;
@@ -152,7 +157,7 @@ table {
 }
 
 table th, td {
-    border: 1px solid;
+    border: 0.0625em solid;
 }
 
 th {
@@ -172,8 +177,8 @@ table caption {
     background-color: rgb(20, 20, 20);
     color: var(--main-white, rgb(217, 217, 217));
     overflow-x: auto;
-    border: 1px solid;
-    padding: 5px;
+    border: 0.0625em solid;
+    padding: 0.3125em;
 }
 
 tbody {
@@ -187,15 +192,15 @@ ul {
 }
 
 ul, ol {
-    margin: 0.2em -25px;
+    margin: 0.2em -1.5625em;
 }
 
 .botones {
     list-style-type: none;
     display: flex;
     margin: 1em auto;
-    border: 3px dotted #333;
-    border-radius: 30px;
+    border: 0.1875em dotted #333;
+    border-radius: 1.875em;
     box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.75),
     -2px -2px 10px 0px rgba(255,255,255, 0.75);
     align-items: center;
@@ -210,26 +215,26 @@ ul.botones a {
 }
 
 .brush {
-  height: 12px;
+  height: 0.75em;
   border: 0;
   box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
   margin-top: 0.7em;
-  margin-bottom: 30px;
+  margin-bottom: 31.875em;
   position: sticky;
-  top: 48px;
+  top: 3em;
   z-index: 1;
 }
 
 .dotted {
 width: 70%;
-border-top: 1px dashed rgb(165, 165, 165);
-border-bottom: 0px dashed rgba(248, 231, 231, 0.26);
+border-top: 0.0625em dashed rgb(165, 165, 165);
+border-bottom: 0 dashed rgba(248, 231, 231, 0.26);
 }
 
 fieldset {
     margin: 0 2em 1em;
-    border: 3px solid gold;
-    border-radius: 5px;
+    border: 0.1875em solid gold;
+    border-radius: 0.3125em;
     background-color: rgba(65, 65, 65, 0.5);
 }
 
@@ -284,18 +289,18 @@ pre code {
 
 .tooltip .tooltip-text {
     visibility: hidden;
-    width: 120px;
+    width: 7.5em;
     background-color: rgba(120, 120, 120, 0.6);
     color: #fff;
     font-weight: 800;
     text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
+    border-radius: 0.375em;
+    padding: 0.3125em 0;
 
     /* posicionar tooltip */
     position: absolute;
     z-index: 1;
-    top: -5px;
+    top: -0.3125em;
     left: 105%;
 }
 
@@ -305,10 +310,10 @@ pre code {
 
 .toc {
     background-color: #232629;
-    border-radius: 5px;
-    margin-bottom: 25px;
+    border-radius: 0.3125em;
+    margin-bottom: 1.5625em;
     width: 20vw;
-    padding: 20px;
+    padding: 1.25em;
 }
 
 .toc ul {
@@ -318,18 +323,18 @@ pre code {
 }
 
 .toc li {
-    margin: 10px 0;
+    margin: 0.625em 0;
 }
 
 .toc p {
-    font-size: 14px;
+    font-size: 0.875em;
     color: #acacac;
 }
 
 .toc a {
     color: skyblue;
     text-decoration: none;
-    margin-bottom: 5px;
+    margin-bottom: 0.3125em;
     display: block;
 }
 
@@ -340,12 +345,12 @@ pre code {
 /* media queries */
 /* i despise media queries */
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 47,9375em) {
     .container {
         display: flex;
         flex-flow: column wrap;
         width: 100%;
-        padding: 0 15px;
+        padding: 0 0.9375em;
     }
 
     h1 {
