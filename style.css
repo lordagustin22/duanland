@@ -129,6 +129,7 @@ img, iframe {
 
 .QR {
     display: initial;
+    width: initial;
 }
 
 figcaption {
