@@ -4,14 +4,10 @@
     --main-light-blue: rgb(74, 121, 170);
 }
 
-html {
-    box-sizing: border-box;
-}
-
 *,
 *::after,
 *::before {
-      box-sizing: inherit;
+      box-sizing: border-box;
 }
 
 ::selection {
@@ -130,6 +126,11 @@ img, iframe {
 .QR {
     display: initial;
     width: initial;
+}
+
+.mini-logo {
+    display: inline;
+    width: .8em;
 }
 
 figcaption {
@@ -330,6 +331,7 @@ pre code {
 }
 
 .toc {
+    box-sizing: content-box;
     background-color: #232629;
     border-radius: 0.5em;
     margin-bottom: 2.5em;
@@ -337,14 +339,10 @@ pre code {
     padding: 2em;
 }
 
-.toc ul {
-    list-style: none;
-    margin: 0;
+.toc ol {
+    list-style-position: outside;
+    margin-left: 1em;
     padding: 0;
-}
-
-.toc li {
-    margin: 1em 0;
 }
 
 .toc p {
@@ -356,7 +354,7 @@ pre code {
     color: skyblue;
     text-decoration: none;
     margin-bottom: 0.5em;
-    font-size: 1.4em;
+    font-size: 0.875rem;
     display: block;
 }
 
