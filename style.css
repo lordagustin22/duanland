@@ -113,17 +113,18 @@ p {
 
 img {
     display: block;
-    max-width: 100%;
     width: 90%;
-    height: auto;
     margin-left: auto;
     margin-right: auto;
 }
 
-iframe {
-    aspect-ratio: 16 / 9;
+img, iframe {
     max-width: 100%;
     height: auto;
+}
+
+.aspect-ratio-16-9 {
+    aspect-ratio: 16 / 9;
 }
 
 .QR {
@@ -427,5 +428,20 @@ a {
 
 a:hover {
     color: var(--main-dark-blue, rgb(0, 27, 57));
+  }
+}
+
+/* otras opciones */
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+    scroll-behavior: smooth;
+  }
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: auto;
+    scroll-behavior: smooth;
   }
 }
