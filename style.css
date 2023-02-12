@@ -208,6 +208,10 @@ li {
     margin-left: .5em;
 }
 
+ol ol li {
+    padding-left: 1em;
+}
+
 .footnotes {
     font-size: 1em;
     font-style: italic;
@@ -281,6 +285,7 @@ code {
       font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
       margin: 0;
       color: #fff;
+      font-size: 1.2em;
 }
 
 pre {
@@ -288,6 +293,7 @@ pre {
       padding: 1.6em 3.2em;
       overflow: auto;
       background-color: rgb(21,32,43);
+      border-radius: 2em;
 }
 
 pre code {
