@@ -208,10 +208,6 @@ li {
     margin-left: .5em;
 }
 
-ol ol li {
-    padding-left: 1em;
-}
-
 .footnotes {
     font-size: 1em;
     font-style: italic;
@@ -285,7 +281,6 @@ code {
       font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
       margin: 0;
       color: #fff;
-      font-size: 1.2em;
 }
 
 pre {
@@ -293,7 +288,6 @@ pre {
       padding: 1.6em 3.2em;
       overflow: auto;
       background-color: rgb(21,32,43);
-      border-radius: 2em;
 }
 
 pre code {
@@ -409,31 +403,65 @@ currently WIP */
     html, body, main {
         background-color: var(--main-white, rgb(217, 217, 217));
         color: rgb(34, 34, 34);
-  }
+    }
 
-.top-nav {
-    background-color: var(--main-white, rgb(217, 217, 217));
-  }
+    .top-nav {
+        background-color: var(--main-white, rgb(217, 217, 217));
+    }
 
-figcaption {
-    color: black;
-  }
+    figcaption {
+        color: black;
+    }
 
-.top-nav .active {
-    color: #050505;
-  }
+    .top-nav .active {
+        color: #050505;
+    }
 
-.top-nav a {
-    color: #353535;
-  }
+    .top-nav a {
+        color: #353535;
+    }
 
-a {
-    color: navy;
-  }
+    a {
+        color: navy;
+    }
 
-a:hover {
-    color: var(--main-dark-blue, rgb(0, 27, 57));
-  }
+    a:hover {
+     color: var(--main-dark-blue, rgb(0, 27, 57));
+    }
+
+      table caption {
+        background-color: var(--main-white, rgb(217, 217, 217));
+        color: rgb(20, 20, 20);
+     }
+
+    th {
+        background-color: var(--main-light-blue, rgb(74, 121, 170));
+        color: var(--main-dark-blue, rgb(0, 27, 57));
+    }
+
+    .toc {
+        background-color: rgb(230, 230, 230);
+    }
+
+    .toc p {
+        color: #575757;
+    }
+
+    .toc a {
+        color: var(--main-dark-blue, rgb(0, 27, 57));
+    }
+
+    .toc a:hover {
+        color: #555;
+    }
+
+    code {
+        color: initial;
+    }
+
+    pre {
+        background-color: rgba(121,132,143,0.5);
+    }
 }
 
 /* otras opciones */
