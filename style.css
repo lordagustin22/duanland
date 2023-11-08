@@ -339,11 +339,17 @@ pre code {
     padding: 2em;
 }
 
-.toc ol {
+.toc ol,ul {
     list-style-position: outside;
     margin-left: 1em;
     padding: 0;
 }
+
+.toc ul {
+    list-style: none;
+    margin-left: .2em;
+}
+
 
 .toc p {
     font-size: 1.2em;
